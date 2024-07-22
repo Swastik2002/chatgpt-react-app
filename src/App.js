@@ -175,7 +175,7 @@ function App() {
 
       if (response.status === 429) {
         if (retryCount < MAX_RETRIES) {
-          console.log('Rate limit exceeded. Retrying after a delay...');
+          console.log('Rate limit exceeded. Retrying after a delay...'+ MAX_RETRIES +" retryCount"+ retryCount);
           setTimeout(() => processMessageToChatGPT(chatMessages, retryCount + 1), 10000); // Retry after 10 seconds
         } else {
           console.error('Max retries exceeded. Please try again later.');
