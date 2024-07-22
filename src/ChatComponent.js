@@ -24,7 +24,7 @@ const ChatComponent = () => {
       {
         headers: {
           'Content-Type': 'application/json',
-          Authorization: 'Bearer sk-proj-RAyyHCrVQCQkU8rroGYYT3BlbkFJEZwv7jT44wEC3nmcBAkS',
+          Authorization: 'Bearer API_KEY',
         },
       }
     );
